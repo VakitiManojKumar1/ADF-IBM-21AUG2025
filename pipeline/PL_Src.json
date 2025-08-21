@@ -55,7 +55,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "PL_Src_Sink",
+						"referenceName": "Ds_output",
 						"type": "DatasetReference"
 					}
 				]
