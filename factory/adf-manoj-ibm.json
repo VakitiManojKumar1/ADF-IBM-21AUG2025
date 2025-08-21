@@ -1,0 +1,9 @@
+{
+	"name": "adf-manoj-ibm",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3d1b7646-4b66-483c-b913-1851a7bf4459",
+		"tenantId": "6c97a608-c34c-4f32-bd0c-37b5fba68685"
+	}
+}
