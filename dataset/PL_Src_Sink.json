@@ -1,5 +1,5 @@
 {
-	"name": "csv_output",
+	"name": "PL_Src_Sink",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_StorageAccount_Gen2",
