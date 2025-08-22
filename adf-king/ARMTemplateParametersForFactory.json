@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-king"
+		},
+		"LS_AWS_S3_secretAccessKey": {
+			"value": ""
+		},
+		"LS_StorageAccount_Gen2_accountKey": {
+			"value": ""
+		},
+		"LS_AWS_S3_properties_typeProperties_accessKeyId": {
+			"value": "AKIATHJS2RKPDTX4CVH3"
+		},
+		"LS_StorageAccount_Gen2_properties_typeProperties_url": {
+			"value": "https://manoj1king.dfs.core.windows.net/"
+		}
+	}
+}
