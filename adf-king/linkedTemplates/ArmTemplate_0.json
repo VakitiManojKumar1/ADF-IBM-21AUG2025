@@ -74,7 +74,7 @@
 					"type": "LinkedServiceReference"
 				},
 				"folder": {
-					"name": "sa3"
+					"name": "asd"
 				},
 				"annotations": [],
 				"type": "DelimitedText",
@@ -82,19 +82,14 @@
 					"location": {
 						"type": "AmazonS3Location",
 						"bucketName": "bkt-manoj-0312-12aug",
-						"fileName": "index.html"
+						"fileName": "Statement13 (3).csv"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
 					"firstRowAsHeader": true,
 					"quoteChar": "\""
 				},
-				"schema": [
-					{
-						"name": "<!DOCTYPE html>",
-						"type": "String"
-					}
-				]
+				"schema": []
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/LS_AWS_S3')]"
@@ -110,7 +105,7 @@
 					"type": "LinkedServiceReference"
 				},
 				"folder": {
-					"name": "sa3"
+					"name": "asd"
 				},
 				"annotations": [],
 				"type": "DelimitedText",
@@ -159,11 +154,37 @@
 									"type": "DelimitedTextReadSettings"
 								}
 							},
-							"enableStaging": false
+							"sink": {
+								"type": "DelimitedTextSink",
+								"storeSettings": {
+									"type": "AzureBlobFSWriteSettings"
+								},
+								"formatSettings": {
+									"type": "DelimitedTextWriteSettings",
+									"quoteAllText": true,
+									"fileExtension": ".txt"
+								}
+							},
+							"enableStaging": false,
+							"translator": {
+								"type": "TabularTranslator",
+								"typeConversion": true,
+								"typeConversionSettings": {
+									"allowDataTruncation": true,
+									"treatBooleanAsNumber": false
+								}
+							}
 						},
 						"inputs": [
 							{
 								"referenceName": "DelimitedText1",
+								"type": "DatasetReference",
+								"parameters": {}
+							}
+						],
+						"outputs": [
+							{
+								"referenceName": "DelimitedText2",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -176,7 +197,8 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/DelimitedText1')]"
+				"[concat(variables('factoryId'), '/datasets/DelimitedText1')]",
+				"[concat(variables('factoryId'), '/datasets/DelimitedText2')]"
 			]
 		}
 	]
