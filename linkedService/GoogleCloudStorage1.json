@@ -1,0 +1,19 @@
+{
+	"name": "GoogleCloudStorage1",
+	"properties": {
+		"annotations": [],
+		"type": "GoogleCloudStorage",
+		"typeProperties": {
+			"serviceUrl": "https://storage.googleapis.com",
+			"accessKeyId": "GOOG1EQQO53SHVSBN6M22ZMOTCW3CMBGZ3JYNNFCVNG2WXLNSJZFFZVLVFWA3",
+			"secretAccessKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "manoj_key_vault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "GCP-1234"
+			}
+		}
+	}
+}
