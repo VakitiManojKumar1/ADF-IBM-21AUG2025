@@ -1,0 +1,10 @@
+{
+	"name": "manoj_key_vault",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://manojking.vault.azure.net/"
+		}
+	}
+}
