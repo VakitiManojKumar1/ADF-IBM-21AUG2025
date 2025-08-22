@@ -5,6 +5,9 @@
 			"referenceName": "LS_StorageAccount_Gen2",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "SA-s3"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
