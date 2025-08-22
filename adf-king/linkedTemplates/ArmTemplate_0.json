@@ -73,6 +73,9 @@
 					"referenceName": "LS_AWS_S3",
 					"type": "LinkedServiceReference"
 				},
+				"folder": {
+					"name": "SA-s3"
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
