@@ -1,0 +1,28 @@
+{
+	"name": "DSs3input",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AWS_S3",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AmazonS3Location",
+				"bucketName": "bkt-manoj-0312-12aug",
+				"fileName": "index.html"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "<!DOCTYPE html>",
+				"type": "String"
+			}
+		]
+	}
+}
